@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #a2c1c5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.outerclass {
+}
+.indexstyle {
+  width: 90vw;
+  max-width: 1170px;
+  display: grid;
+  margin: 5rem auto;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .indexstyle {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.book img {
+  object-fit: contain;
+}
+.book {
+  text-align: center;
+  display: grid;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  border-radius: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.book h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.imagesection {
+  padding: 1rem;
+}
+
+.author {
+  color: gray;
+  margin: 0;
+}
+
+.title {
+  height: 8rem;
+  width: 15rem;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.4rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #ffb338;
+}
